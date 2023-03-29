@@ -1,0 +1,18 @@
+<form *ngIf="showAddEmployee" (ngSubmit)="onSubmit()">
+    <div class="form-control">
+        <label for="text">OIB</label>
+        <input type="number" name="oib" [(ngModel)]="oib" id="oib" placeholder="Dodaj OIB">
+    </div>
+
+    <div class="form-control">
+        <label for="text">Ime</label>
+        <input type="text" name="ime" [(ngModel)]="ime" id="ime" placeholder="Dodaj Ime">
+    </div>
+
+    <div class="form-control">
+        <label for="text">Prezime</label>
+        <input type="text" name="prezime" [(ngModel)]="prezime" id="prezime" placeholder="Dodaj Prezime">
+    </div>
+
+    <input type="submit" value="Save" class="btn btn-block">
+</form>
